@@ -19,7 +19,7 @@ func main() {
 	fmt.Printf("%-4d \n", Num) // pad with spaces(width 4, left justified)
 	fmt.Printf("%O4d \n", Num) // pad with zeros(width 4)
 }
-*/
+
 // Float 64 Formatting Verbs
 package main
 
@@ -44,4 +44,21 @@ func main() {
 	fmt.Printf("%4f \n", Float)  // pad with spaces(width 4, right justified)
 	fmt.Printf("%-4f \n", Float) // pad with spaces(width 4, left justified)
 	fmt.Printf("%O4f \n", Float) // pad with zeros(width 4)
+}
+*/
+
+// String Formatting Verbs
+
+package main
+
+import "fmt"
+
+func main() {
+	var str = "Success"
+	fmt.Printf("%s \n", str)   // Print the value as plain string
+	fmt.Printf("%q, \n", str)  //Print the value as doubled quoted string
+	fmt.Printf("%8s \n", str)  // Print the value as plain string(width 8, right justified)
+	fmt.Printf("%-8s \n", str) // Print the value as plain string(width 8, left justified)
+	fmt.Printf("%x \n", str)   // Print the value as hexadecimal dump of byte values
+	fmt.Printf("% x \n", str)  // Print the value as hexadecimal dump of byte values with spaces
 }
